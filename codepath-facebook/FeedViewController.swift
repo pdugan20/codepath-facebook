@@ -11,13 +11,13 @@ import UIKit
 class FeedViewController: UIViewController {
 
     @IBOutlet weak var scrollView: UIScrollView!
-    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var feedImageView: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         scrollView.contentSize = CGSize(width: 320, height: 1000)
-        scrollView.contentSize = imageView.image!.size
+        scrollView.contentSize = feedImageView.image!.size
         
     }
 
