@@ -182,6 +182,46 @@
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="1438"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
+                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wedding2" id="NRQ-wI-5X5" userLabel="wedding2_wrapper">
+                                        <rect key="frame" x="3" y="240" width="155" height="155"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="1IL-np-juL" appends="YES" id="69u-3L-jLL"/>
+                                        </connections>
+                                    </imageView>
+                                    <imageView contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wedding3" id="NoL-oY-BHF" userLabel="wedding3_wrapper">
+                                        <rect key="frame" x="162" y="83" width="154" height="100"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="8Gl-tH-T0g" appends="YES" id="ghp-Yy-ahw"/>
+                                        </connections>
+                                    </imageView>
+                                    <imageView contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wedding4" id="uQO-5x-TD4" userLabel="wedding4_wrapper">
+                                        <rect key="frame" x="162" y="188" width="154" height="101"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="arw-ne-JY3" appends="YES" id="rCG-ed-GZg"/>
+                                        </connections>
+                                    </imageView>
+                                    <imageView contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wedding5" id="qgK-WF-Zto" userLabel="wedding5_wrapper">
+                                        <rect key="frame" x="162" y="294" width="154" height="101"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="uYo-Vu-6dH" appends="YES" id="veU-SQ-IOW"/>
+                                        </connections>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wedding1" id="9AO-9E-vXt" userLabel="wedding1_wrapper">
+                                        <rect key="frame" x="3" y="83" width="155" height="154"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="N40-AK-Jcq" appends="YES" id="pcP-Sg-H46"/>
+                                        </connections>
+                                    </imageView>
                                 </subviews>
                             </scrollView>
                         </subviews>
@@ -194,6 +234,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ys7-wc-fMY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="N40-AK-Jcq"/>
+                <tapGestureRecognizer id="8Gl-tH-T0g"/>
+                <tapGestureRecognizer id="arw-ne-JY3"/>
+                <tapGestureRecognizer id="uYo-Vu-6dH"/>
+                <tapGestureRecognizer id="1IL-np-juL"/>
             </objects>
             <point key="canvasLocation" x="-480" y="2825"/>
         </scene>
@@ -313,6 +358,11 @@
         <image name="people" width="320" height="1006"/>
         <image name="requests_tab" width="27" height="27"/>
         <image name="settings" width="320" height="1800"/>
+        <image name="wedding1" width="320" height="480"/>
+        <image name="wedding2" width="480" height="320"/>
+        <image name="wedding3" width="480" height="320"/>
+        <image name="wedding4" width="480" height="320"/>
+        <image name="wedding5" width="480" height="320"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
