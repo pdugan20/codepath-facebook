@@ -13,7 +13,7 @@ class FeedViewController: UIViewController {
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var feedImageView: UIImageView!
     
-    // var imageTransition: ImageTransition!
+    var imageTransition: ImageTransition!
     var selectedImageView: UIImageView!
     
     override func viewDidLoad() {
@@ -30,9 +30,11 @@ class FeedViewController: UIViewController {
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
-        var destinationViewController = segue.destinationViewController as! PhotoViewController
-        destinationViewController.weddingPhoto = self.selectedImageView.image
-        
+        var photoViewController = segue.destinationViewController as! PhotoViewController
+        photoViewController.weddingPhoto = self.selectedImageView.image
+        imageTransition = ImageTransition()
+        photoViewController.modalPresentationStyle = UIModalPresentationStyle.Custom
+        photoViewController.transitioningDelegate = imageTransition
     }
 
     override func didReceiveMemoryWarning() {

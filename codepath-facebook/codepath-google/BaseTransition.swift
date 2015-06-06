@@ -1,9 +1,9 @@
 //
 //  BaseTransition.swift
-//  codepath-tumblr
+//  transitionDemo
 //
-//  Created by Patrick Dugan on 5/31/15.
-//  Copyright (c) 2015 dailydoog. All rights reserved.
+//  Created by Timothy Lee on 2/22/15.
+//  Copyright (c) 2015 Timothy Lee. All rights reserved.
 //
 
 import UIKit
@@ -53,7 +53,6 @@ class BaseTransition: NSObject, UIViewControllerTransitioningDelegate, UIViewCon
         self.transitionContext = transitionContext
         
         if (isPresenting) {
-            toViewController.view.bounds = fromViewController.view.bounds
             containerView.addSubview(toViewController.view)
             presentTransition(containerView, fromViewController: fromViewController, toViewController: toViewController)
         } else {

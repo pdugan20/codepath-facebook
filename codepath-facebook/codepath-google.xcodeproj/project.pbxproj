@@ -8,9 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		E7367C1C1AFB3D9000E2B8CA /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7367C1B1AFB3D9000E2B8CA /* DetailViewController.swift */; };
-		E73B81881B2384EC00E176A8 /* BaseTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = E73B81851B2384EC00E176A8 /* BaseTransition.swift */; };
 		E73B81891B2384EC00E176A8 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = E73B81861B2384EC00E176A8 /* Common.swift */; };
-		E73B818A1B2384EC00E176A8 /* FadeTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = E73B81871B2384EC00E176A8 /* FadeTransition.swift */; };
+		E73B818F1B23B13B00E176A8 /* ImageTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = E73B818E1B23B13B00E176A8 /* ImageTransition.swift */; };
+		E73B81951B23B84700E176A8 /* BaseTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = E73B81931B23B84700E176A8 /* BaseTransition.swift */; };
+		E73B81961B23B84700E176A8 /* FadeTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = E73B81941B23B84700E176A8 /* FadeTransition.swift */; };
 		E7B46BF61AFB09840056216F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B46BF51AFB09840056216F /* AppDelegate.swift */; };
 		E7B46BFB1AFB09840056216F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7B46BF91AFB09840056216F /* Main.storyboard */; };
 		E7B46BFD1AFB09840056216F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7B46BFC1AFB09840056216F /* Images.xcassets */; };
@@ -35,11 +36,12 @@
 
 /* Begin PBXFileReference section */
 		E7367C1B1AFB3D9000E2B8CA /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailViewController.swift; path = "../codepath-google/DetailViewController.swift"; sourceTree = "<group>"; };
-		E73B81851B2384EC00E176A8 /* BaseTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseTransition.swift; path = ../BaseTransition.swift; sourceTree = "<group>"; };
 		E73B81861B2384EC00E176A8 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Common.swift; path = ../Common.swift; sourceTree = "<group>"; };
-		E73B81871B2384EC00E176A8 /* FadeTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FadeTransition.swift; path = ../FadeTransition.swift; sourceTree = "<group>"; };
-		E73B818C1B239E5B00E176A8 /* codepath-facebook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = "codepath-facebook.app"; path = "/Users/patdugan/GitHub/codepath-facebook/codepath-facebook/build/Debug-iphoneos/codepath-facebook.app"; sourceTree = "<absolute>"; };
-		E73B818D1B239E5B00E176A8 /* codepath-facebookTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "codepath-facebookTests.xctest"; path = "/Users/patdugan/GitHub/codepath-facebook/codepath-facebook/build/Debug-iphoneos/codepath-facebookTests.xctest"; sourceTree = "<absolute>"; };
+		E73B818E1B23B13B00E176A8 /* ImageTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageTransition.swift; sourceTree = "<group>"; };
+		E73B81901B23B75F00E176A8 /* codepath-facebook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = "codepath-facebook.app"; path = "/Users/patdugan/GitHub/codepath-facebook/codepath-facebook/build/Debug-iphoneos/codepath-facebook.app"; sourceTree = "<absolute>"; };
+		E73B81911B23B75F00E176A8 /* codepath-facebookTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "codepath-facebookTests.xctest"; path = "/Users/patdugan/GitHub/codepath-facebook/codepath-facebook/build/Debug-iphoneos/codepath-facebookTests.xctest"; sourceTree = "<absolute>"; };
+		E73B81931B23B84700E176A8 /* BaseTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTransition.swift; sourceTree = "<group>"; };
+		E73B81941B23B84700E176A8 /* FadeTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FadeTransition.swift; sourceTree = "<group>"; };
 		E7B46BF41AFB09840056216F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
 		E7B46BF51AFB09840056216F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E7B46BFA1AFB09840056216F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -75,11 +77,19 @@
 		E73B818B1B23850300E176A8 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
-				E73B81851B2384EC00E176A8 /* BaseTransition.swift */,
 				E73B81861B2384EC00E176A8 /* Common.swift */,
-				E73B81871B2384EC00E176A8 /* FadeTransition.swift */,
 			);
 			name = Libraries;
+			sourceTree = "<group>";
+		};
+		E73B81921B23B82500E176A8 /* Transitions */ = {
+			isa = PBXGroup;
+			children = (
+				E73B81931B23B84700E176A8 /* BaseTransition.swift */,
+				E73B81941B23B84700E176A8 /* FadeTransition.swift */,
+				E73B818E1B23B13B00E176A8 /* ImageTransition.swift */,
+			);
+			name = Transitions;
 			sourceTree = "<group>";
 		};
 		E7B46BE71AFB09840056216F = {
@@ -94,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				E7B46C171AFB135D0056216F /* View Controllers */,
+				E73B81921B23B82500E176A8 /* Transitions */,
 				E73B818B1B23850300E176A8 /* Libraries */,
 				E7B46BF51AFB09840056216F /* AppDelegate.swift */,
 				E7B46BF91AFB09840056216F /* Main.storyboard */,
@@ -162,7 +173,7 @@
 			);
 			name = "codepath-facebook";
 			productName = "codepath-google";
-			productReference = E73B818C1B239E5B00E176A8 /* codepath-facebook.app */;
+			productReference = E73B81901B23B75F00E176A8 /* codepath-facebook.app */;
 			productType = "com.apple.product-type.application";
 		};
 		E7B46C041AFB09840056216F /* codepath-facebookTests */ = {
@@ -180,7 +191,7 @@
 			);
 			name = "codepath-facebookTests";
 			productName = "codepath-googleTests";
-			productReference = E73B818D1B239E5B00E176A8 /* codepath-facebookTests.xctest */;
+			productReference = E73B81911B23B75F00E176A8 /* codepath-facebookTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -248,12 +259,13 @@
 				E7B46C1B1AFB13AF0056216F /* MessagesViewController.swift in Sources */,
 				E7B46C161AFB13410056216F /* FeedViewController.swift in Sources */,
 				E7B46C1D1AFB13C50056216F /* NotificationsViewController.swift in Sources */,
-				E73B81881B2384EC00E176A8 /* BaseTransition.swift in Sources */,
 				E7B46C191AFB13960056216F /* RequestViewController.swift in Sources */,
-				E73B818A1B2384EC00E176A8 /* FadeTransition.swift in Sources */,
 				E7C0BA141B22744700464F27 /* PhotoViewController.swift in Sources */,
 				E7B46BF61AFB09840056216F /* AppDelegate.swift in Sources */,
 				E73B81891B2384EC00E176A8 /* Common.swift in Sources */,
+				E73B81951B23B84700E176A8 /* BaseTransition.swift in Sources */,
+				E73B818F1B23B13B00E176A8 /* ImageTransition.swift in Sources */,
+				E73B81961B23B84700E176A8 /* FadeTransition.swift in Sources */,
 				E7367C1C1AFB3D9000E2B8CA /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

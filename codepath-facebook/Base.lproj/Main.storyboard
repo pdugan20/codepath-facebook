@@ -47,16 +47,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="doneButton" id="r58-eY-rC5">
+                                <rect key="frame" x="264" y="23" width="51" height="27"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="S7R-Oz-XzS" userLabel="expandedImageView">
+                                <rect key="frame" x="-7" y="57" width="335" height="490"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="photo_actions" id="PCg-zV-8RF">
                                 <rect key="frame" x="0.0" y="524" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="doneButton" id="r58-eY-rC5">
-                                <rect key="frame" x="262" y="22" width="51" height="27"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="XSL-Wc-gMq">
-                                <rect key="frame" x="262" y="22" width="51" height="27"/>
+                                <rect key="frame" x="264" y="23" width="51" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -65,10 +69,6 @@
                                     <action selector="didPressDoneButton:" destination="8cD-yS-eca" eventType="touchUpInside" id="MFZ-0M-wtE"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="S7R-Oz-XzS" userLabel="expandedImageView">
-                                <rect key="frame" x="0.0" y="57" width="320" height="469"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -79,7 +79,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Qz-7t-EIM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-480" y="3546"/>
+            <point key="canvasLocation" x="-480" y="3547"/>
         </scene>
         <!--Messages View Controller-->
         <scene sceneID="oON-dW-U8P">
@@ -207,7 +207,7 @@
         <!--Feed View Controller-->
         <scene sceneID="WFQ-n5-tR8">
             <objects>
-                <viewController id="qZj-K2-tCE" customClass="FeedViewController" customModule="codepath_facebook" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FeedViewController" id="qZj-K2-tCE" customClass="FeedViewController" customModule="codepath_facebook" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DJA-WO-RSg">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -273,13 +273,13 @@
                     <connections>
                         <outlet property="feedImageView" destination="k9D-hU-Mo4" id="lNN-gZ-Hco"/>
                         <outlet property="scrollView" destination="dVL-3W-IP1" id="MhD-6n-ISz"/>
+                        <segue destination="8cD-yS-eca" kind="modal" identifier="fullPhotoSegue" modalTransitionStyle="crossDissolve" id="8pG-q3-ZFI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ys7-wc-fMY" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="N40-AK-Jcq">
                     <connections>
-                        <action selector="didTapPhoto:" destination="qZj-K2-tCE" id="xho-4r-GCJ"/>
-                        <segue destination="8cD-yS-eca" kind="modal" identifier="fullPhotoSegue" modalTransitionStyle="crossDissolve" id="oob-XA-rIn"/>
+                        <action selector="didTapPhoto:" destination="qZj-K2-tCE" id="sxX-2X-zs4"/>
                     </connections>
                 </tapGestureRecognizer>
                 <tapGestureRecognizer id="8Gl-tH-T0g">

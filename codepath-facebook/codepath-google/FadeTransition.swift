@@ -1,9 +1,9 @@
 //
 //  FadeTransition.swift
-//  codepath-tumblr
+//  transitionDemo
 //
-//  Created by Patrick Dugan on 5/31/15.
-//  Copyright (c) 2015 dailydoog. All rights reserved.
+//  Created by Timothy Lee on 11/4/14.
+//  Copyright (c) 2014 Timothy Lee. All rights reserved.
 //
 
 import UIKit
