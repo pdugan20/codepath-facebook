@@ -42,7 +42,7 @@
         <!--Photo View Controller-->
         <scene sceneID="JRI-hP-4vF">
             <objects>
-                <viewController id="8cD-yS-eca" customClass="PhotoViewController" customModule="codepath_facebook" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PhotoViewController" id="8cD-yS-eca" customClass="PhotoViewController" customModule="codepath_facebook" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KkG-i5-EJD">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -55,10 +55,6 @@
                                 <rect key="frame" x="262" y="22" width="51" height="27"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="S7R-Oz-XzS" userLabel="expandedImageView">
-                                <rect key="frame" x="0.0" y="55" width="320" height="469"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="XSL-Wc-gMq">
                                 <rect key="frame" x="262" y="22" width="51" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -69,10 +65,15 @@
                                     <action selector="didPressDoneButton:" destination="8cD-yS-eca" eventType="touchUpInside" id="MFZ-0M-wtE"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="S7R-Oz-XzS" userLabel="expandedImageView">
+                                <rect key="frame" x="0.0" y="57" width="320" height="469"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="photoImageView" destination="S7R-Oz-XzS" id="6Sj-Ga-F6n"/>
                         <outlet property="photoMainView" destination="KkG-i5-EJD" id="mD2-an-exg"/>
                     </connections>
                 </viewController>
@@ -277,13 +278,30 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ys7-wc-fMY" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="N40-AK-Jcq">
                     <connections>
-                        <segue destination="8cD-yS-eca" kind="modal" modalTransitionStyle="crossDissolve" id="oob-XA-rIn"/>
+                        <action selector="didTapPhoto:" destination="qZj-K2-tCE" id="xho-4r-GCJ"/>
+                        <segue destination="8cD-yS-eca" kind="modal" identifier="fullPhotoSegue" modalTransitionStyle="crossDissolve" id="oob-XA-rIn"/>
                     </connections>
                 </tapGestureRecognizer>
-                <tapGestureRecognizer id="8Gl-tH-T0g"/>
-                <tapGestureRecognizer id="arw-ne-JY3"/>
-                <tapGestureRecognizer id="uYo-Vu-6dH"/>
-                <tapGestureRecognizer id="1IL-np-juL"/>
+                <tapGestureRecognizer id="8Gl-tH-T0g">
+                    <connections>
+                        <action selector="didTapPhoto:" destination="qZj-K2-tCE" id="MQP-Ws-tfx"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="arw-ne-JY3">
+                    <connections>
+                        <action selector="didTapPhoto:" destination="qZj-K2-tCE" id="iJ1-fW-5gP"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="uYo-Vu-6dH">
+                    <connections>
+                        <action selector="didTapPhoto:" destination="qZj-K2-tCE" id="klY-m6-Ibu"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="1IL-np-juL">
+                    <connections>
+                        <action selector="didTapPhoto:" destination="qZj-K2-tCE" id="g2p-gm-jcU"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-480" y="2825"/>
         </scene>

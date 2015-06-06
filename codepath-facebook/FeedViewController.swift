@@ -13,11 +13,25 @@ class FeedViewController: UIViewController {
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var feedImageView: UIImageView!
     
+    // var imageTransition: ImageTransition!
+    var selectedImageView: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         scrollView.contentSize = CGSize(width: 320, height: 1000)
         scrollView.contentSize = feedImageView.image!.size
+        
+    }
+    
+    @IBAction func didTapPhoto(sender: UITapGestureRecognizer) {
+        selectedImageView = sender.view as! UIImageView
+        performSegueWithIdentifier("fullPhotoSegue", sender: self)
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
+        var destinationViewController = segue.destinationViewController as! PhotoViewController
+        destinationViewController.weddingPhoto = self.selectedImageView.image
         
     }
 
