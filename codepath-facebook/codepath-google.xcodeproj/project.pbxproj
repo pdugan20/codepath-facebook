@@ -17,6 +17,7 @@
 		E7B46C1B1AFB13AF0056216F /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B46C1A1AFB13AF0056216F /* MessagesViewController.swift */; };
 		E7B46C1D1AFB13C50056216F /* NotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B46C1C1AFB13C50056216F /* NotificationsViewController.swift */; };
 		E7B46C1F1AFB13DC0056216F /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B46C1E1AFB13DC0056216F /* MoreViewController.swift */; };
+		E7C0BA141B22744700464F27 /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C0BA131B22744700464F27 /* PhotoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		E7B46C1A1AFB13AF0056216F /* MessagesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MessagesViewController.swift; path = ../MessagesViewController.swift; sourceTree = "<group>"; };
 		E7B46C1C1AFB13C50056216F /* NotificationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NotificationsViewController.swift; path = ../NotificationsViewController.swift; sourceTree = "<group>"; };
 		E7B46C1E1AFB13DC0056216F /* MoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MoreViewController.swift; path = ../MoreViewController.swift; sourceTree = "<group>"; };
+		E7C0BA131B22744700464F27 /* PhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PhotoViewController.swift; path = "../codepath-google/PhotoViewController.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +132,7 @@
 				E7B46C1C1AFB13C50056216F /* NotificationsViewController.swift */,
 				E7B46C1E1AFB13DC0056216F /* MoreViewController.swift */,
 				E7367C1B1AFB3D9000E2B8CA /* DetailViewController.swift */,
+				E7C0BA131B22744700464F27 /* PhotoViewController.swift */,
 			);
 			name = "View Controllers";
 			path = "codepath-google.xcodeproj";
@@ -239,6 +242,7 @@
 				E7B46C161AFB13410056216F /* FeedViewController.swift in Sources */,
 				E7B46C1D1AFB13C50056216F /* NotificationsViewController.swift in Sources */,
 				E7B46C191AFB13960056216F /* RequestViewController.swift in Sources */,
+				E7C0BA141B22744700464F27 /* PhotoViewController.swift in Sources */,
 				E7B46BF61AFB09840056216F /* AppDelegate.swift in Sources */,
 				E7367C1C1AFB3D9000E2B8CA /* DetailViewController.swift in Sources */,
 			);
