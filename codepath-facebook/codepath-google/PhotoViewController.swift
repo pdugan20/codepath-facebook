@@ -18,10 +18,14 @@ class PhotoViewController: UIViewController {
         super.viewDidLoad()
         self.photoMainView.backgroundColor = self.mainBgColor
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    @IBAction func didPressDoneButton(sender: UIButton) {
+        dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    // Sets status bar style to either light or dark (default)
+    override func preferredStatusBarStyle() -> UIStatusBarStyle {
+        return UIStatusBarStyle.LightContent
     }
 
 }
