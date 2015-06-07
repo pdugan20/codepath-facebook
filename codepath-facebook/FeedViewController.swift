@@ -21,7 +21,6 @@ class FeedViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         self.feedMainView.backgroundColor = self.mainBgColor
         scrollView.contentSize = CGSize(width: 320, height: 1000)
         scrollView.contentSize = feedImageView.image!.size

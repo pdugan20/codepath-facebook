@@ -15,7 +15,6 @@ class NotificationsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         scrollView.contentSize = CGSize(width: 320, height: 1000)
         scrollView.contentSize = imageView.image!.size
     }
