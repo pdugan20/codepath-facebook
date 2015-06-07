@@ -232,7 +232,7 @@
                                             <outletCollection property="gestureRecognizers" destination="1IL-np-juL" appends="YES" id="69u-3L-jLL"/>
                                         </connections>
                                     </imageView>
-                                    <imageView contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wedding3" id="NoL-oY-BHF" userLabel="wedding3_wrapper">
+                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wedding3" id="NoL-oY-BHF" userLabel="wedding3_wrapper">
                                         <rect key="frame" x="162" y="83" width="154" height="100"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <gestureRecognizers/>
@@ -240,7 +240,7 @@
                                             <outletCollection property="gestureRecognizers" destination="8Gl-tH-T0g" appends="YES" id="ghp-Yy-ahw"/>
                                         </connections>
                                     </imageView>
-                                    <imageView contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wedding4" id="uQO-5x-TD4" userLabel="wedding4_wrapper">
+                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wedding4" id="uQO-5x-TD4" userLabel="wedding4_wrapper">
                                         <rect key="frame" x="162" y="188" width="154" height="101"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <gestureRecognizers/>
@@ -248,7 +248,7 @@
                                             <outletCollection property="gestureRecognizers" destination="arw-ne-JY3" appends="YES" id="rCG-ed-GZg"/>
                                         </connections>
                                     </imageView>
-                                    <imageView contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wedding5" id="qgK-WF-Zto" userLabel="wedding5_wrapper">
+                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wedding5" id="qgK-WF-Zto" userLabel="wedding5_wrapper">
                                         <rect key="frame" x="162" y="294" width="154" height="101"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <gestureRecognizers/>
@@ -272,6 +272,7 @@
                     <navigationItem key="navigationItem" id="DQx-Y3-8Vt"/>
                     <connections>
                         <outlet property="feedImageView" destination="k9D-hU-Mo4" id="lNN-gZ-Hco"/>
+                        <outlet property="feedMainView" destination="DJA-WO-RSg" id="P4n-U0-DWB"/>
                         <outlet property="scrollView" destination="dVL-3W-IP1" id="MhD-6n-ISz"/>
                         <segue destination="8cD-yS-eca" kind="modal" identifier="fullPhotoSegue" modalTransitionStyle="crossDissolve" id="8pG-q3-ZFI"/>
                     </connections>

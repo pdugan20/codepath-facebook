@@ -22,13 +22,21 @@ class PhotoViewController: UIViewController {
         self.photoMainView.backgroundColor = self.mainBgColor
         
         photoImageView.image = weddingPhoto
-        // photoImageView.frame = imageViewFrameForImage(photoImageView.image!, inView: photoImageView.superview!)
-        // photosScrollView.contentSize = photoImageView.frame.size
-        
+        photoImageView.frame = framePhoto(photoImageView.image!, inView: photoImageView.superview!)
     }
     
     @IBAction func didPressDoneButton(sender: UIButton) {
         dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    func framePhoto(image: UIImage, inView view: UIView) -> CGRect {
+        var fromImageSize = image.size
+        var aspectRatio: CGFloat = CGFloat(fromImageSize.height / fromImageSize.width)
+        var toViewBounds = view.bounds
+        var toImageViewWidth = CGRectGetWidth(toViewBounds)
+        var toImageViewHeight = toImageViewWidth * aspectRatio
+        
+        return CGRect(x: 0, y: CGRectGetMidY(toViewBounds) - toImageViewHeight * 0.5, width: toImageViewWidth, height: toImageViewHeight)
     }
     
     // Sets status bar style to either light or dark (default)

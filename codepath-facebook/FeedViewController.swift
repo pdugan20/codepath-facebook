@@ -12,13 +12,17 @@ class FeedViewController: UIViewController {
 
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var feedImageView: UIImageView!
+    @IBOutlet var feedMainView: UIView!
     
     var imageTransition: ImageTransition!
     var selectedImageView: UIImageView!
     
+    let mainBgColor = UIColor(red: 211/255, green: 214/255, blue: 219/255, alpha: 1.0)
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.feedMainView.backgroundColor = self.mainBgColor
         scrollView.contentSize = CGSize(width: 320, height: 1000)
         scrollView.contentSize = feedImageView.image!.size
         
