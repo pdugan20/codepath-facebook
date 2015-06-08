@@ -63,7 +63,7 @@
                                         <rect key="frame" x="0.0" y="50" width="320" height="474"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="S7R-Oz-XzS" userLabel="expandedImageView">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="S7R-Oz-XzS" userLabel="expandedImageView">
                                                 <rect key="frame" x="-7" y="0.0" width="335" height="474"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
